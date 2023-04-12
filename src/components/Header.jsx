@@ -1,14 +1,11 @@
 import React from "react";
 import Navbar from "./Navbar";
 import styled from "styled-components";
+import logo from "../images/logo-no-background.png";
 const Header = () => {
   return (
     <MainHeader className="header">
-      <img
-        src="./images/logo-no-background.svg"
-        alt="logo image"
-        className="header__logo"
-      />
+      <img src={logo} alt="logo image" className="header__logo" />
       <Navbar className="nav" />
     </MainHeader>
   );

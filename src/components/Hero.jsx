@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
 import { NavLink } from "react-router-dom";
+import heroImg from "../images/hero.jpg";
 const Hero = ({ myData }) => {
   return (
     <Wrapper>
@@ -22,7 +23,7 @@ const Hero = ({ myData }) => {
           <div className="hero-section-image">
             <figure>
               <img
-                src="./images/hero.jpg"
+                src={heroImg}
                 alt="image of a family shopping happily"
                 className="img-style"
               />

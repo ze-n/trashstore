@@ -39,7 +39,7 @@ const App = () => {
   return (
     <AnimatePresence>
       <ThemeProvider theme={theme}>
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <GlobalStyle />
           <Header />
           <Routes>
