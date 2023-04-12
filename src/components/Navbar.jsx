@@ -32,8 +32,8 @@ const Navbar = () => {
             </NavLink>
           </motion.li>
           <motion.li whileHover={{ scale: 1.2 }} className="nav__items">
-            <Button>
-              <NavLink to="/login" className="nav__links cta">
+            <Button className="cta">
+              <NavLink to="/login" className="nav__links">
                 Log in
               </NavLink>
             </Button>
@@ -110,7 +110,11 @@ const Nav = styled.nav`
     display: none;
   }
   .cta {
+    padding-block: 0.8rem;
+  }
+  .cta .nav__links {
     color: ${({ theme }) => theme.colors.white};
+    font-size: 1.65rem;
   }
   @media screen and (max-width: ${({ theme }) => theme.media.mobile}) {
     .nav__list {
