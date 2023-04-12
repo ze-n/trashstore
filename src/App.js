@@ -43,16 +43,17 @@ const App = () => {
           <GlobalStyle />
           <Header />
           <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/about" element={<About />}></Route>
-            <Route path="/products" element={<Products />}></Route>
-            <Route path="/contact" element={<Contact />}></Route>
+            <Route exact path="/" element={<Home />}></Route>
+            <Route exact path="/about" element={<About />}></Route>
+            <Route exact path="/products" element={<Products />}></Route>
+            <Route exact path="/contact" element={<Contact />}></Route>
             <Route
               path="/singleproduct/:id"
+              exact
               element={<SingleProduct />}
             ></Route>
-            <Route path="/cart" element={<Cart />}></Route>
-            <Route path="*" element={<ErrorPage />}></Route>
+            <Route exact path="/cart" element={<Cart />}></Route>
+            <Route exact path="*" element={<ErrorPage />}></Route>
           </Routes>
         </BrowserRouter>
       </ThemeProvider>
