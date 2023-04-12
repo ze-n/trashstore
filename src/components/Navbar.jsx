@@ -164,6 +164,12 @@ const Nav = styled.nav`
     .nav__cart-icon {
       font-size: 4rem;
     }
+    .cta .nav__links {
+      font-size: 2.7rem;
+    }
+    .cta {
+      padding-inline: 3rem;
+    }
   }
 `;
 
