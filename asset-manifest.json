@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ze-n/trashstore/static/css/main.e6c13ad2.css",
+    "main.js": "/ze-n/trashstore/static/js/main.a078fbbd.js",
+    "static/js/787.66ecc523.chunk.js": "/ze-n/trashstore/static/js/787.66ecc523.chunk.js",
+    "index.html": "/ze-n/trashstore/index.html",
+    "main.e6c13ad2.css.map": "/ze-n/trashstore/static/css/main.e6c13ad2.css.map",
+    "main.a078fbbd.js.map": "/ze-n/trashstore/static/js/main.a078fbbd.js.map",
+    "787.66ecc523.chunk.js.map": "/ze-n/trashstore/static/js/787.66ecc523.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.a078fbbd.js"
+  ]
+}
