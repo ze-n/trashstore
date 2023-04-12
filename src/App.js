@@ -54,7 +54,7 @@ const App = () => {
               element={<SingleProduct />}
             ></Route>
             <Route exact path="/cart" element={<Cart />}></Route>
-            <Route exact path="*" element={<ErrorPage />}></Route>
+            <Route path="*" element={<ErrorPage />}></Route>
           </Routes>
           <Footer />
         </BrowserRouter>
