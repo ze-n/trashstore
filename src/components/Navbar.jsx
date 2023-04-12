@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { FiShoppingCart } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { CgMenu, CgClose } from "react-icons/cg";
+import { Button } from "../styles/Button";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -31,9 +32,11 @@ const Navbar = () => {
             </NavLink>
           </motion.li>
           <motion.li whileHover={{ scale: 1.2 }} className="nav__items">
-            <NavLink to="/login" className="nav__links nav__cart-link">
-              Log in
-            </NavLink>
+            <Button>
+              <NavLink to="/login" className="nav__links cta">
+                Log in
+              </NavLink>
+            </Button>
           </motion.li>
           <motion.li whileHover={{ scale: 1.2 }} className="nav__items">
             <NavLink to="/cart" className="nav__links nav__cart-link">
@@ -86,7 +89,7 @@ const Nav = styled.nav`
     position: relative;
   }
   .nav__cart-icon {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .nav__cart-total-items {
     font-size: 1rem;
@@ -105,6 +108,9 @@ const Nav = styled.nav`
 
   .nav__menu-icons {
     display: none;
+  }
+  .cta {
+    color: ${({ theme }) => theme.colors.white};
   }
   @media screen and (max-width: ${({ theme }) => theme.media.mobile}) {
     .nav__list {
@@ -147,6 +153,12 @@ const Nav = styled.nav`
     }
     .show__menu {
       clip-path: circle(141.4% at 100% 0);
+    }
+    .nav__links {
+      font-size: 3rem;
+    }
+    .nav__cart-icon {
+      font-size: 4rem;
     }
   }
 `;
