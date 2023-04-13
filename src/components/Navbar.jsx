@@ -11,34 +11,34 @@ const Navbar = () => {
     <>
       <Nav className="nav">
         <ul className={open ? "nav__list show__menu" : "nav__list"}>
-          <motion.li whileHover={{ scale: 1.2 }} className="nav__items">
+          <motion.li whileHover={{ scale: 0.9 }} className="nav__items">
             <NavLink to="/" className="nav__links">
               Home
             </NavLink>
           </motion.li>
-          <motion.li whileHover={{ scale: 1.2 }} className="nav__items">
+          <motion.li whileHover={{ scale: 0.9 }} className="nav__items">
             <NavLink to="/about" className="nav__links">
               About
             </NavLink>
           </motion.li>
-          <motion.li whileHover={{ scale: 1.2 }} className="nav__items">
+          <motion.li whileHover={{ scale: 0.9 }} className="nav__items">
             <NavLink to="/products" className="nav__links">
               Products
             </NavLink>
           </motion.li>
-          <motion.li whileHover={{ scale: 1.2 }} className="nav__items">
+          <motion.li whileHover={{ scale: 0.9 }} className="nav__items">
             <NavLink to="/contact" className="nav__links">
               Contact
             </NavLink>
           </motion.li>
-          <motion.li whileHover={{ scale: 1.2 }} className="nav__items">
+          <motion.li whileHover={{ scale: 0.9 }} className="nav__items">
             <Button className="cta">
               <NavLink to="/login" className="nav__links">
                 Log in
               </NavLink>
             </Button>
           </motion.li>
-          <motion.li whileHover={{ scale: 1.2 }} className="nav__items">
+          <motion.li whileHover={{ scale: 0.9 }} className="nav__items">
             <NavLink to="/cart" className="nav__links nav__cart-link">
               <FiShoppingCart className="nav__cart-icon" />
               <span className="nav__cart-total-items">2</span>
@@ -81,6 +81,7 @@ const Nav = styled.nav`
   }
   .nav__links {
     color: ${({ theme }) => theme.colors.black};
+    font-size: 1.8rem;
   }
   .nav__links:where(:active, :focus, :hover) {
     color: ${({ theme }) => theme.colors.helper};
